@@ -27,21 +27,6 @@ docker compose up -d
 
 Then open http://localhost:8080.
 
-## Host it on GitHub Pages
-
-1. Create an empty public repository on GitHub (no README, no license).
-2. Push this repository to it:
-
-   ```
-   git remote add origin https://github.com/ango-dev/where-was-this-receipt-from.git
-   git push -u origin main
-   ```
-
-3. In the repository, open Settings, then Pages. Set the source to "Deploy from a branch", choose `main` and `/docs`, and save.
-4. After a minute the site is live at `https://ango-dev.github.io/where-was-this-receipt-from/`.
-
-Any static host works the same way: publish the contents of `docs/`.
-
 ## The rate table
 
 The built-in table holds 14,037 tax regions across all 50 states, DC and Puerto Rico. It was built from Avalara's free ZIP-level rate tables for September 2026 by merging ZIP codes that share a region name and rate.
