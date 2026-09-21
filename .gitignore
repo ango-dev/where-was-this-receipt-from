@@ -1,0 +1,5 @@
+# Raw rate downloads stay local; only the merged docs/rates.csv is committed.
+downloads/*
+!downloads/README.txt
+.DS_Store
+__pycache__/

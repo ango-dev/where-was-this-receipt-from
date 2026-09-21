@@ -1,0 +1,9 @@
+services:
+  where-was-this-receipt-from:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      # Mounting docs/ lets you swap rates.csv without rebuilding the image.
+      - ./docs:/usr/share/nginx/html:ro
+    restart: unless-stopped
